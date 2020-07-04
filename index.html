@@ -11,6 +11,11 @@
 <body>
 
     <div id="demo" class="container">
+        <ul>
+            <li v-repeat="name: names" v-text="name"></li>
+        </ul>
+
+        <input type="text" placeholder="Add a new name" v-model="newName" v-on="blur: addName">
 
     </div>
 
